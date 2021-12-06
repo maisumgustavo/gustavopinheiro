@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+label {
+    font-family: 'Inter', sans-serif;
+}
+
+#relogio {
+    font-size: 88px;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    margin: 1px;
+}
