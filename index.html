@@ -1,66 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Importação do Vue 3.2.20 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.global.js"></script>
-    <!-- Importação do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Pomodoro</title>
+    <title>Curriculo - Gustavo Pinheiro</title>
 </head>
-
 <body>
-    <div id="app" class="container row-cols-12">
-        <!-- Conteiner do pomodoro -->
-        <div class="card">
-            <div class="card-header">
-                <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
-                    <button type="button" class="btn btn-outline-primary" @click="tempoDePomodoro()">Pomodoro</button>
-                    <button type="button" class="btn btn-outline-primary" @click="tempoDePausaCurta()">Pausa
-                        curta</button>
-                    <button type="button" class="btn btn-outline-primary" @click="tempoDePausaLonga()">Pausa
-                        longa</button>
-                </div>
-            </div>
-            <div class="card-body">
-                <label id="relogio" class="row justify-content-center">{{ relogio }}</label>
-            </div>
-            <div class="card-footer">
-                <div class="justify-content-center">
-                    <button type="button" class="btn btn-success" @click="cronometrar()">{{ textoBotao }}</button>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <!-- Lista de tarefas -->
-        <div class="container justify-content-center">
-            <form v-on:submit.prevent="adicionarTarefa()">
-                <label for="nova-tarefa" class="col-md-3">Adicionar tarefa: </label>
-                <input v-model="novoTextoTarefa" id="nova-tarefa" placeholder="Ex.: Fazer o almoço"
-                    class="col-md-6" style="margin-right: 10px;">
-                <button class="btn btn-primary col-md-2">Adicionar</button>
-            </form>
-            <hr>
-        </div>
-        <ul class="list-group list-group-flush">
-            <item-tarefa v-for="(tarefa, index) in tarefas" :key="tarefa.id" :title="tarefa.title"
-                @remove="tarefas.splice(index, 1)" class="col-8"></item-tarefa>
+    <header>
+        <h1>Gustavo Pinheiro</h1>
+        <ul>
+            <li>Home</li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
-    </div>
+    </header>
+    <main>
+        <section>
+            <h2>Quem sou eu</h2>
+            <article>
+                <p>Olá, meu nome é Gustavo, nasci em 1998, em Araguaína-TO, Brasil.</p>
+                <p>É uma cidade muito bacana, nova em consideração com as outras espalhadas por este Brasil,
+                    mas, é uma cidade incrível, tem crescido em ritmo acelerado, e eu gosto bastante daqui.
+                </p>
+                <p>Sou estudante de sistemas de informação, um pouco inferrujado, mas nada que um bom estudo e
+                    contribuições com uns projetos não resolvam. Aprendi bastante com a faculdade, e tenho um certo
+                    de não a ter levado mais a serio desde o começo, mas agora tudo mudou.
+                </p>
+                <p>Quero contribuir para melhorar o mundo e a eu mesmo da melhor forma que eu puder.</p>
+                <p>Tenho alguns desafios a superar, como: concluir tarefas, alterar rotinas e alguns pontos das relações
+                    sociais. Sabendo disso, são o meu maior foco para melhorar.
+                </p>
+                <p>Eu tenho desenvoltura para conversar, explicar e ensinar as coisas. E em boa parte dos ambientes dos
+                    quais frequento não tenho inimizades.
+                </p>
+                <p>Agora que eu falei um pouco de mim, segue agora alguns dos meus objetivos em relação a área da programação.</p>
+            </article>
+        </section>
+        <section>
+            <section>
+                <h2>Áreas de interesse</h2>
+                <article>
+                    <h3>Gamedev</h3>
+                    <p>Desde pequeno sempre gostei de jogos, e uma das coisas que eu quero fazer é um jogo.</p>
+                    <p>Comecei um curso da CS50, que eu achei muito bom! Porém estou com dificuldades de manter a rotina de estudos.
+                        Só que, eu tenho vontade de terminar, além de transformar essa vontade em ação também ser uma vontade minha.
+                    </p>
+                </article>
+                <article>
+                    <h3>Redes e segurança</h3>
+                    <p>A parte de segurança me chama atenção tante para poder me proteger, quanto para poder atacar se necessário. Até
+                        porquê, uma boa defesa é um ataque melhor ainda.
+                    </p>
+                </article>
+                <article>
+                    <h3>Sistemas Operacionais (SO)</h3>
+                    <p>Atualmente o sistema operacional com o qual mais me identifico é o Arch linux. É ele que esta instalado na minha máquina principal.
+                        Desejo muito aprender sobre ele, e contribuir com a comunidade para trazer pessoas para este lado da força e também melhorar o sistema.
+                    </p>
+                </article>
+                <article>
+                    <h3>WebDev (FrontEnd, BackEnd)</h3>
+                    <p>Não tenho muito o que falar aqui, talvez depois eu desenvolva esta parque melhor, mas apesar disso, eu ainda sinto
+                        que é extritamente necessário o conhecimento de desenvolvimento web, já que, estamos todos conectados.
+                    </p>
+                </article>
+                <article>
+                    <h3>Interface Homem-Máquina (UX, IU)</h3>
+                    <p></p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h3>Edição de vídeo</h3>
+                    <p>Atualmente estou tentando fazer da edição de vídeo o meu ganha pão. Tenho conhecimentos "ok" para poder entregar um produto de
+                        qualidade, e procuro clientes que estejam satisfeitos com o custo beneficio do meu trabalho.
+                    </p>
+                    <p>Então, eu não poderia deixar de mostrar um pouco do meu trabalho:</p>
+                    
+                </article>
+                <article>
+                    <h3>Música</h3>
+                </article>
+            </section>
+        </section>
+        <section>
+            <h2>Projetos</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Tecnologia da informação</h3>
+                        <p>Vou deixar aqui, alguns projetos pessoais a medida em que eu for os desenvolvendo. Espero não 
+                            demorar muito para atualizar as coisas por aqui.</p>
+                        <ul>
+                            <li><a href="pomodoro.html">Pomodoro</a></li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Edição de video</h3>
+                        <p>Este aqui é o meu <a href="http://www.youtube.com/channel/UCxiDYundnl27VcJ6qvJBP_g" target="_blank" rel="noopener noreferrer">Canal do YouTube</a>,
+                        onde eu vou postar os meus trabalhos a respeito de edição de vídeo.</p>
+                    </article>
+                </li>
+            </ul>
 
-    <!-- Importação da aplicação Vue -->
-    <script src="./app.js"></script>
+        </section>
+        <section>
+            <h2>Contatos</h2>
+            <ul>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">TikTok (Tico Teco)</a></li>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">Koo</a></li>
+                <li><a href="mailto:gustavospr@hotmail.com">Email</a></li>
 
-    <!-- Script do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
-
 </html>
