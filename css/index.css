@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 3% 10%;
+}
+
+section {
+    margin: 5% 0;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+p {
+    margin: 0.75%;
+}
+
+article.card {
+    margin: 0.75% 1.25%;
+    padding: 2% 1%;
+    width: 25%;
+    border: solid 1px black;
+    border-radius: 14px;
+}
+
+article.card p {
+    margin: 4% 0;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+	margin: 3% 5%;
+    }
+
+    section {
+	margin: 2% 0;
+    }
+
+    article.card {
+	width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+	margin: 3%;
+    }
+
+    section {
+	margin: 2% 0;
+    }
+
+    section div {
+	flex-direction: column;
+    }
+
+    article.card {
+	width: 40%;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    main {
+	margin: 2%;
+    }
+
+    section {
+	margin: 2.5% 0;
+    }
+
+    section div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+
+    h2 {
+	margin: 2% 0;
+    }
+
+    article.card {
+	width: 90%;
+	padding: 2%;
+	margin-bottom: 2%;
+    }
+    
+    p {
+	padding: 2%;
+    }
+}
