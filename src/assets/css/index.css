@@ -6,6 +6,7 @@
 body {
     background-color: #222222;
     color: #fff;
+    font-size: 1.25em;
 }
 
 header {
@@ -15,11 +16,12 @@ header {
 
 ul {
     list-style: none;
+    margin: 5% 0;
 }
 
-a:hover {
+/*a:hover {
 
-}
+}*/
 
 main {
     margin: 3% 10%;
@@ -42,6 +44,10 @@ section div {
 
 p {
     margin: 0.75%;
+}
+
+#domain .card {
+    border-radius: 0;
 }
 
 .card {
@@ -107,10 +113,22 @@ p {
         margin: 2% 0;
     }
 
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .card {
         width: 90%;
         padding: 2%;
         margin-bottom: 2%;
+    }
+
+    .card figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     p {
