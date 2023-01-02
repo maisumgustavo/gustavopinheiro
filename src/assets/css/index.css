@@ -1,162 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #222222;
-    color: #fff;
-    font-size: 1.25em;
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.25em;
 }
 
 header {
-    padding: 4% 3%;
-    background-color: #2F4552;
+  background-color: #2F4552;
 }
 
 ul {
-    list-style: none;
-    margin: 5% 0;
-}
-
-main {
-    margin: 3% 10%;
-    display: flex;
-    flex-direction: column;
-}
-
-section {
-    margin: 5% 0;
-    padding: 2%;
-    background-color: #4B799A;
-}
-
-section div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-p {
-    margin: 0.75%;
-}
-
-#domain .card {
-    border-radius: 0;
+  list-style: none;
 }
 
 .card {
-    margin: 0.75% 1.25%;
-    padding: 2% 1%;
-    width: 25%;
-    border: solid 1px #2F4552;
-    border-radius: 14px;
+  border: #222222 1px solid ;
+  border-radius: 1em;
+  align-items: center;
 }
 
-.card p {
-    margin: 4% 0;
+#domain .card {
+  border-radius: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: inherit;
+  background-color: #4B799A;
+}
+
+section div {
+  display: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 input[type="button"] {
-
+  border-radius: 1em;
 }
 
 @media screen and (max-width: 1024px) {
-    main {
-        margin: 3% 5%;
-    }
 
-    section {
-        margin: 2% 0;
-    }
-
-    .card {
-        width: 30%;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    main {
-        margin: 3%;
-    }
+  #me div {
+    display: flex;
+    flex-direction: column;
 
-    section {
-        margin: 2% 0;
-    }
+  }
 
-    section div {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 40%;
-    }
+  #social ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 432px) {
-    main {
-        margin: 2%;
-    }
+  section {
+    padding: 1em;
+    margin: 2%;
+  }
 
-    section {
-        margin: 2.5% 0;
-    }
+  section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    section div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .card {
+    padding: 0.75em;
+    margin: 1em 0;
+  }
 
-    h2 {
-        margin: 2% 0;
-    }
+  #clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  input[type="button"] {
+    padding: .75em;
+  }
 
-    .card {
-        width: 90%;
-        padding: 2%;
-        margin-bottom: 2%;
-    }
+  #social {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .card figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+}
 
-    p {
-        padding: 2%;
-    }
+@media screen and (max-width: 280px) {
+  section {
+    padding: 0.5em;
+    margin: 0.40em 0;
+  }
 
-    #clients {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  p {
+    margin: 0.40em 0;
+  }
 
-    input[type="button"] {
-      padding: .75em;
-      border-radius: 1em;
-    }
+  img {
+    width: 180px;
+    height: auto;
+  }
 
-    #social {
-      display: flex;
-      flex-direction: column;
+  footer img {
+    margin: 0.20em;
+    width: 40px;
+    height: auto;
+  }
 
-    }
-
-    #social ul {
-      margin: 2%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-    }
+  #projects {
+    flex-direction: column;
+  }
 }
